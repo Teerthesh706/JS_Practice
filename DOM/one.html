@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color:#212121; color:#fff">
+    <h1 id="Title" class="Hello">Hello Sage</h1>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+    
+</body>
+<script>
+    const ID = document.getElementById("Title")
+    // console.log(ID);
+    const myClass = document.getElementsByClassName("Hello")
+    // console.log(myClass);
+    const myQuery = document.querySelector("title")
+    // console.log(myQuery); //<title>Document</title>
+    const webParent = document.querySelector('.parent')
+    // console.log(webParent);
+    // console.log(webParent.children); //return HTMLcollection
+    // console.log(webParent.childElementCount); //7
+    //console.log(webParent.children[2]); //<div class="day">Wednesday</div>
+    for (let i = 0; i < webParent.children.length; i++) {
+        //console.log(webParent.children[i].innerHTML);
+    }
+    webParent.children[1].style.color = "violet"
+    // console.log(webParent.firstElementChild); //<div class="day">Monday</div>
+    // console.log(webParent.lastElementChild); //<div class="day">Sunday</div>
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    // console.log("Nodes:", webParent.childNodes);  //NodeList(15)
+    
+// ============================================================================//
+
+    //adding elements from js to web
+
+    const vivid = document.createElement('div')
+    vivid.className = "main"
+    vivid.id = "myId"
+    vivid.style.backgroundColor = "cyan"
+    vivid.style.color = "black"
+    vivid.style.fontSize = "20px"
+    vivid.setAttribute = ("title", "myAttribute")
+    vivid.style.padding = "15px"
+    // vivid.innerText = "MY DOM Manipulation"
+    const addText = document.createTextNode("MY DOM Manipulation")
+    vivid.appendChild(addText)
+
+    document.body.appendChild(vivid)
+    // console.log(vivid);
+
+
+</script>
+</html>
+
+<!-- document.querySelector('tag')
+document.querySelector('#id')
+document.querySelector('.class') -->
+
