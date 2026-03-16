@@ -79,13 +79,14 @@ for(let i = 0; i<arr.length ; i++){
       arr2.push(String.fromCharCode(i) + "->" + arr[i]);
   }
 }
-console.log(arr2)
+// console.log(arr2)
 
 //____________________________________________________________________________________________________________________;
 
-let a = "bdfbfhjbfedhdhd"
-let b = "sjdkmdijdeidjeidj"
-
+let a = "hello bhaiya"
+let b = "BhaiyHello"
+a = a.toLowerCase();
+b = b.toLowerCase();
 if(a.length === b.length){
   let arr = new Array(26).fill(0)
   for(let i = 0 ; i < a.length ; i++){
@@ -96,7 +97,14 @@ if(a.length === b.length){
     let ascii = b.charCodeAt(i)-97;
     arr[ascii]--;
   }
-    let isArrEmpty = arr.every(count => count === 0);
+  let isArrEmpty = true;
+
+  for (let num of arr) {
+    if (num !== 0) {
+      isArrEmpty = false;
+      break;
+    }
+  }
 
   if (isArrEmpty) {
     console.log("true");
@@ -104,7 +112,7 @@ if(a.length === b.length){
     console.log("false");
   }
 } else {
-  // console.log("String aren't equal")
+  console.log("String aren't equal")
 }
 
 //____________________________________________________________________________________________________________________;
