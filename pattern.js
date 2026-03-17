@@ -48,16 +48,18 @@ function checkArmStrong(num) {
 
 //____________________________________________________________
 
-// let n = 5
-// for (let i = 0 ; i < n ; i++){
-//   for(let j = 0 ; j < n-i ; j++){
-//     process.stdout.write(" ")
-//   }
-//   for (let j = 0; j <= i; j++) {
-//     process.stdout.write("* ");
-//   }
-//   console.log()
-// }
+function starPyramid(n){
+  for (let i = 0 ; i < n ; i++){
+    for(let j = 0 ; j < n-i ; j++){
+      process.stdout.write(" ")
+    }
+    for (let j = 0; j <= i; j++) {
+      process.stdout.write("* ");
+    }
+    console.log()
+  }
+}
+// starPyramid(5)
 //      *
 //     * *
 //    * * *
@@ -66,27 +68,8 @@ function checkArmStrong(num) {
 
 //____________________________________________________________
 
-// let n = 5;
-// for (let i = 1; i <= n; i++) {
-//   for (let j = 1; j <= n; j++) {
-//    if(i == j || (i+j == n+1)){
-//     process.stdout.write("* ")
-//    }else {
-//     process.stdout.write("  ")
-//    }
-//   }
-//   console.log();
-// }
-// *       *
-//   *   *
-//     *
-//   *   *
-// *       *
-
-//____________________________________________________________
-
 //V shape
-let n = 5;
+
 function shapeV(n){for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= n*2-1; j++) {
     if(i == j || (i+j == n*2)){
@@ -98,6 +81,7 @@ function shapeV(n){for (let i = 1; i <= n; i++) {
     console.log();
   }
 }
+// shapeV(5)
 // *               *
 //   *           *
 //     *       *
@@ -108,7 +92,6 @@ function shapeV(n){for (let i = 1; i <= n; i++) {
 
 // Alphabatic triangle
 
-let n = 5;
 function alphabetTriangle(n) {
   for (let i = 1; i <= n; i++) {
     let str = "";
@@ -118,7 +101,7 @@ function alphabetTriangle(n) {
     console.log(str);
   }
 } 
-// alphabetTriangle(n)
+// alphabetTriangle(5)
 // A
 // A B
 // A B C
@@ -128,7 +111,6 @@ function alphabetTriangle(n) {
 //____________________________________________________________
 
 //Hollow Square
-let n = 5;
 
 function hollowSquare(n){for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
@@ -141,7 +123,7 @@ function hollowSquare(n){for (let i = 0; i < n; i++) {
     console.log();
   }
 }
-// hollowSquare(n)
+// hollowSquare(5)
 // * * * * * 
 // *       *
 // *       *
@@ -151,7 +133,6 @@ function hollowSquare(n){for (let i = 0; i < n; i++) {
 //____________________________________________________________
 
 // //Number Square
-let n = 4;
 
 function numSqur(n){for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= n; j++) {
@@ -160,7 +141,7 @@ function numSqur(n){for (let i = 1; i <= n; i++) {
     console.log();
   }
 }
-// numSqur(n)
+// numSqur(4)
 // 1 1 1 1 
 // 2 2 2 2
 // 3 3 3 3
@@ -169,7 +150,7 @@ function numSqur(n){for (let i = 1; i <= n; i++) {
 //____________________________________________________________
 
 //Right Triangle
-let n = 4;
+
 function rightTri(n){for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= i; j++) {
       process.stdout.write(j + " ");
@@ -177,7 +158,7 @@ function rightTri(n){for (let i = 1; i <= n; i++) {
     console.log();
   }
 }
-// rightTri(n)
+// rightTri(4)
 // 1 
 // 1 2
 // 1 2 3
@@ -186,7 +167,6 @@ function rightTri(n){for (let i = 1; i <= n; i++) {
 //____________________________________________________________
 
 // //Inverted Triangle
-let n = 4;
 
 function invertedTri(n){for (let i = 0; i < n; i++) {
     for (let j = 1; j <= n - i; j++) {
@@ -195,14 +175,14 @@ function invertedTri(n){for (let i = 0; i < n; i++) {
     console.log();
   }
 }
-// invertedTri(n)
+// invertedTri(4)
 // 1 2 3 4 
 // 1 2 3
 // 1 2
 // 1
 
 // //Pyramid Pattern
-let n = 4;
+
 function pyramid(n){for (let i = 0; i < n; i++) {
     for (let j = 0; j < n - i - 1; j++) {
       process.stdout.write(" ");
@@ -213,7 +193,7 @@ function pyramid(n){for (let i = 0; i < n; i++) {
     console.log();
   }
 }
-// pyramid(n)
+// pyramid(4)
 //    *
 //   ***
 //  *****
@@ -222,7 +202,7 @@ function pyramid(n){for (let i = 0; i < n; i++) {
 //____________________________________________________________
 
 // //Diamond Pattern
-let n = 4;
+
 function diamond(n){
   // upper
   for (let i = 0; i < n; i++) {
@@ -246,7 +226,7 @@ function diamond(n){
     console.log();
   }
 }
-// diamond(n)
+// diamond(4)
 //    *
 //   ***
 //  *****
@@ -258,14 +238,12 @@ function diamond(n){
 //____________________________________________________________
 
 // //Hollow Pyramid
-let n = 4;
 
 function hollowPyramid() {
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n - i - 1; j++) {
       process.stdout.write(" ");
     }
-
     for (let j = 0; j < 2 * i + 1; j++) {
       if (j === 0 || j === 2 * i || i === n - 1) {
         process.stdout.write("*");
@@ -276,7 +254,7 @@ function hollowPyramid() {
     console.log();
   }
 }
-// hollowPyramid(n);
+// hollowPyramid(4);
 //    *
 //   * *
 //  *   *
@@ -285,25 +263,22 @@ function hollowPyramid() {
 //____________________________________________________________
 
 // //Number Diamond
-let n = 4;
+
 function numDiamond(n){
   for (let i = 1; i <= n; i++) {
     for (let j = 0; j < n - i; j++) {
       process.stdout.write(" ");
     }
-
     for (let j = 1; j <= i; j++) {
-      process.stdout.write(j.toString());
+      process.stdout.write(j+"");
     }
-
     for (let j = i - 1; j >= 1; j--) {
-      process.stdout.write(j.toString());
+      process.stdout.write(j+"");
     }
-
     console.log();
   }
 }
-// numDiamond(n);
+// numDiamond(4);
 //    1;
 //   121;
 //  12321;
@@ -312,7 +287,7 @@ function numDiamond(n){
 //____________________________________________________________
 
 // //Concentric Square
-let n = 4;
+
 function concentricSqr(){
   let size = 2 * n - 1;
   for (let i = 0; i < size; i++) {
@@ -323,8 +298,7 @@ function concentricSqr(){
     console.log();
     }
 }
-// concentricSqr(n)
-
+// concentricSqr(4)
 // 4 4 4 4 4 4 4 
 // 4 3 3 3 3 3 4
 // 4 3 2 2 2 3 4
@@ -336,7 +310,7 @@ function concentricSqr(){
 //____________________________________________________________
 
 // //Zig-Zag Pattern
-let n = 5;
+
 function zigZag(n){
     for (let i = 0; i < n; i++) {
       for (let j = 0; j < n; j++) {
@@ -349,7 +323,8 @@ function zigZag(n){
     console.log();
   }
 }
-// zigZag(n)
+
+// zigZag(5)
 // *       * 
 //   *   *
 //     *
