@@ -1,0 +1,24 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "2dArray.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teerthesh706/JS_Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Teerthesh706/JS_Practice/issues"
+  },
+  "homepage": "https://github.com/Teerthesh706/JS_Practice#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
