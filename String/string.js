@@ -48,22 +48,18 @@ let str3 = "hello bhai kaise ho";
 
 function capitilizeFnL(str) {
   let words = str.split(" ");
-  let ans = [];
-  for (let word of words) {
-    // if (word.length <= 1) {
-    //   ans.push(word.toUpperCase());
-    //   continue;
-    // }
-    let first = word[0].toUpperCase();
-    let last = word[word.length - 1].toUpperCase();
+  let ans = "";
+  for (let i = 0; i < words.length; i++) {
+    let word = str[i];
+    let first = word.charAt(0).toUpperCase();
     let mid = word.substring(1, word.length - 1);
-
-    ans.push(first + mid + last);
+    let last =  word.charAt(word.length - 1).toUpperCase();
+    ans = ans + (first + mid + last) + " "
   }
 
-  console.log(ans.join(" "));
+  console.log(ans)
 }
-// capitilizeFnL(str3); 
+capitilizeFnL(str3); 
 
 //____________________________________________________________________________________________________________________
 
@@ -112,7 +108,7 @@ if(a.length === b.length){
     console.log("false");
   }
 } else {
-  console.log("String aren't equal")
+  // console.log("String aren't equal")
 }
 
 //____________________________________________________________________________________________________________________;

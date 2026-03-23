@@ -1,5 +1,9 @@
 let arr = [1, 2, 3, 4, 5];
 let totalSum = 0;
+let totalMax = 0
+
+arr.forEach((e)=>totalMax+=e)
+// console.log(totalMax);
 
 for (let i = 0; i < arr.length; i++) {
   for (let j = i + 1; j < arr.length; j++) {
@@ -7,7 +11,7 @@ for (let i = 0; i < arr.length; i++) {
     totalSum += Math.abs(arr[i] - arr[j]);
   }
 }
-// console.log(totalSum);
+// console.log(res)
 
 let arr1 = [1, 2, 3, 4, 5];
 let res = [];
