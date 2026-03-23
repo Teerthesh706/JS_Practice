@@ -11,6 +11,7 @@ for(let i = 0 ; i < arr.length ; i++){
         arr[j][i] = temp 
     }
 }
+console.log(arr)
 
 for(let i = 0 ; i < n ; i++){
     let start = 0
