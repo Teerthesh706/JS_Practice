@@ -1,4 +1,4 @@
-let arr = [1,5,3,4]
+/let arr = [1,5,3,4]
 let max = 0
 let min = arr[0]
 let profit =0

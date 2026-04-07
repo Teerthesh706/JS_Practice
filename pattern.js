@@ -238,7 +238,7 @@ function numDiamond(n){
 
 // //Concentric Square
 
-function concentricSqr(){
+function concentricSqr(n){
   let size = 2 * n - 1;
   for (let i = 0; i < size; i++) {
     for (let j = 0; j < size; j++) {

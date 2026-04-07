@@ -10,4 +10,4 @@ for(let i = 0 ; i < arr.length ; i++){
    arr.sort((a, b) => b - a);
    max = arr[0];
  }
-console.log(max)
+console.log(max) 
